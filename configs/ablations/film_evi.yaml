@@ -1,0 +1,12 @@
+inherits: ../default.yaml
+
+value_head:
+  input_dim: 4096
+  hidden_dim: 1024
+  conditioning: film
+  evi_hidden_dim: 256
+  evi_layers: 2
+  detach_descriptor: true
+
+logging:
+  output_dir: outputs/film_evi
