@@ -1,0 +1,46 @@
+seed: 0
+
+policy:
+  name: openvla
+  vla_path: openvla/openvla-7b
+  checkpoint_path: null
+  freeze_backbone: true
+  lora:
+    enabled: true
+    rank: 32
+    alpha: 64
+    dropout: 0.0
+
+env:
+  backend: maniskill
+  env_id: PutOnPlateInScene25Main-v3
+  num_envs: 16
+  max_episode_steps: 80
+
+ppo:
+  gamma: 0.99
+  gae_lambda: 0.95
+  clip_ratio: 0.2
+  value_coef: 0.5
+  entropy_coef: 0.0
+  learning_rate: 1.0e-5
+  rollout_steps: 128
+  minibatch_size: 64
+  update_epochs: 4
+  max_grad_norm: 1.0
+
+entropy:
+  aggregation: mean
+  normalize_by_vocab: true
+
+value_head:
+  input_dim: 4096
+  hidden_dim: 1024
+  conditioning: film
+  evi_hidden_dim: 256
+  evi_layers: 2
+  detach_descriptor: true
+
+logging:
+  output_dir: outputs/film_evi
+  wandb_project: RL2VLA
