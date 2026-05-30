@@ -1,0 +1,6 @@
+Method,ID,Visual OOD,Semantic OOD,Execution OOD
+SFT/OpenVLA,TBD,TBD,TBD,TBD
+PPO without EVI,TBD,TBD,TBD,TBD
+PPO + entropy concat,TBD,TBD,TBD,TBD
+PPO + entropy-weighted value loss,TBD,TBD,TBD,TBD
+PPO + FiLM-EVI,TBD,TBD,TBD,TBD
