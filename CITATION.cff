@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+title: "RL2VLA: Reinforcement Learning with Entropy-Aware Value Injection for Vision-Language-Action Generalization"
+message: "If you use RL2VLA, please cite the paper."
+type: software
+authors:
+  - family-names: Jiang
+    given-names: Maowei
+  - family-names: Wang
+    given-names: Qi
+  - family-names: Ai
+    given-names: Hongfeng
+  - family-names: Zeng
+    given-names: Pengyu
+  - family-names: Bus
+    given-names: Peter
+year: 2026
+license: MIT
+repository-code: "https://github.com/Zero-coder/RL2VLA"
