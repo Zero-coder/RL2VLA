@@ -1,0 +1,13 @@
+inherits: ../default.yaml
+
+value_head:
+  input_dim: 4096
+  hidden_dim: 1024
+  conditioning: none
+  detach_descriptor: true
+
+ppo:
+  entropy_value_loss_scale: 0.5
+
+logging:
+  output_dir: outputs/value_loss_weighting
