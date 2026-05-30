@@ -1,0 +1,10 @@
+inherits: ../default.yaml
+
+value_head:
+  input_dim: 4096
+  hidden_dim: 1024
+  conditioning: none
+  detach_descriptor: true
+
+logging:
+  output_dir: outputs/ppo_no_evi
